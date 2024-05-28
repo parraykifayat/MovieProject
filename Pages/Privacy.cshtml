@@ -1,0 +1,38 @@
+﻿@page
+@* @model PrivacyModel *@
+@* @model MovieProject.Pages.PrivacyModel
+ *@
+@model MovieProject.Pages.IndexModel
+
+
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Details</th>
+            <th><i class="bi bi-stopwatch"></i> Watched</th>
+            <th> <i class="bi bi-hand-thumbs-up"></i>Likes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>
+                @foreach(var movie  in Model.Movies)
+                {
+                    <div class="card cards">
+                        <img src="@movie.image" />
+                    </div>
+                    <div class="card-body">
+                        <p>@movie.description</p>
+                    </div>            
+                }
+            </th>
+            
+        </tr>
+    </tbody>
+</table>

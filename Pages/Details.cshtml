@@ -1,0 +1,39 @@
+﻿@page
+@model MovieProject.Pages.DetailsModel
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.MoviesDetail.Image"/>
+        </div>
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">@Model.MoviesDetail.Id</th>
+                        <td>@Model.MoviesDetail.Title</td>
+                        <td>@Model.MoviesDetail.Year</td>
+                        <td>@Model.MoviesDetail.Description</td>
+                        <td>@Model.MoviesDetail.Rating</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+     
+        
+   
+
+</div>
